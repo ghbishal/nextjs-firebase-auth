@@ -101,6 +101,17 @@ AUTH_GOOGLE_SECRET=your-google-client-secret
 
 ---
 
+> ## ⚠️ **Important Note: Authorized Redirect URIs Required**
+
+When setting up your Google OAuth credentials in the [Google Cloud Console – Credentials](https://console.cloud.google.com/apis/credentials):
+
+Make sure to add the following to the **Authorized redirect URIs** section of your OAuth 2.0 Web Client:
+
+- Example : [your-base-url]/api/auth/callback/google
+- For local development: http://localhost:3000/api/auth/callback/google
+
+---
+
 ### 5. Generate Firebase Admin SDK Credentials
 
 - Go to your Firebase Admin SDK settings:  
